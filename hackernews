@@ -1,0 +1,67 @@
+!! HACKERNEWS STYLE CHANGE !!
+    ! Full page background
+  news.ycombinator.com##html:style(background-color: #16171b !important)
+    ! Main container of content
+  news.ycombinator.com###hnmain:style(background-color: #222327 !important; border-radius: 8px !important; padding: 10px !important; min-width: 800px !important; max-width: 1400px !important;)
+    ! Alternate background colors for comments of posts to easier read
+  news.ycombinator.com##.athing:nth-child(even):style(background-color: #32333a4d !important)
+    ! Force titles (urls) on main page to use default same background color as main
+  news.ycombinator.com##td.title:style(background-color: #222327 !important)
+    
+  ! [[ BANNER ]]
+    ! Change banner color to a less aggressive orange
+  news.ycombinator.com###hnmain > tbody > tr:nth-child(1) > td:style(background-color: #de935f !important)
+    ! Banner font size increase && Underline on hover
+  news.ycombinator.com##span.pagetop:style(font-size: 16px !important)
+  news.ycombinator.com##span.pagetop a:hover:style(text-decoration: underline !important)
+    
+  ! [ MAIN PAGE CONTENT ]
+    ! Link title & url size
+  news.ycombinator.com##.title a:link:style(color: #fffaf5 !important; font-size: 16px !important)
+    ! Link title visited color
+  news.ycombinator.com##.title a:visited:style(color: #6c86a0 !important)
+    ! Link URL color
+  news.ycombinator.com##.sitestr:style(color: #828282 !important)
+    ! Link URL underline forced to be grey
+  news.ycombinator.com##.sitestr:hover:style(text-decoration: underline !important)
+    ! Larger parenthesis for URL after the title
+  news.ycombinator.com##span.sitebit.comhead:style(font-size: 16px !important)
+    ! Text under Title (points, user, time, hide, comments)
+  news.ycombinator.com##.subtext:style(font-size: 12px !important)
+    ! Space between posts
+  news.ycombinator.com##.spacer:style(height: 18px !important;)
+    ! Change color of how many points and comments a post has
+  news.ycombinator.com##.subline > span, span.subline > a:last-of-type:style(color: #de935f !important)
+    ! Change color of usernames
+  news.ycombinator.com##.hnuser:style(color: #b294bb !important)
+  
+  ! [[ COMMENTS ]]
+    ! Comment size, width + color
+  news.ycombinator.com##.commtext, .toptext:style(color: #fffaf5 !important; font-size: 16px !important; max-width: 120ch !important;)
+    ! Line to the side of comments for readability
+  news.ycombinator.com##.ind:style(border-right: 1px dotted #6c86a0 !important)
+    ! Links found within comments, also changes color of 'reply'
+  news.ycombinator.com##.comment a:link, .toptext a:link:style(color: #de935f !important)
+  
+  ! [[ BUTTON & TEXT INPUT ]]
+    ! Button
+  news.ycombinator.com##input:style(-moz-appearance: none !important; font-size: 16px !important; color: #de935f !important; background-color: #16171b !important; border-radius: 5px !important; border: 2px solid #de935f !important; padding: 4px 10px !important)
+    ! Button hover
+  news.ycombinator.com##input:hover:style(box-shadow: 3px 3px #de935f !important; cursor: pointer !important)
+    ! Text area when commenting - must remove mozilla appearnce for firefox
+  news.ycombinator.com##textarea:style(-moz-appearance: none !important; width: 680px !important; font-size: 18px !important; padding: 8px !important; color: #c6c6c6 !important; outline: none !important; background-color: #32333a !important; border: 2px solid gray; border-radius: 5px !important;)
+  news.ycombinator.com##textarea:focus:style(border: 2px solid #de935f !important)
+  
+  ! [[ MISC STYLINGS ]]
+    ! Upvote arrow
+  news.ycombinator.com##.votearrow:style(width: 16px !important; height: 16px !important; background-repeat: no-repeat !important; margin: 1px 6px 3px 6px !important; background-size: 15px !important;)
+    ! Font fix on User Profile
+  news.ycombinator.com##form.profileform u:style(color: #f1f3f5 !important; font-size: 16px !important; line-height: 1.5 !important;)
+  news.ycombinator.com##form.profileform u:hover:style(text-decoration: 3px underline #de935f !important)
+    ! Left Side text on user Profile
+  news.ycombinator.com##tr > td[valign="top"]:style(color: #828282 !important)
+    ! Date Created on user profile
+  news.ycombinator.com##tr > td[valign="top"]:contains("created:") ~ td > a:style(color: #828282 !important; text-decoration: underline !important)
+    ! Links in the footer
+  news.ycombinator.com##.yclinks a:style(color: #de935f !important;)
+  news.ycombinator.com##.yclinks a:hover:style(text-decoration: 2px underline #de935f !important;)
