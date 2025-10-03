@@ -1,0 +1,7 @@
+! YouTube Videos Per Row Fix (Home and Channel Pages)
+youtube.com##ytd-rich-grid-row, #contents.ytd-rich-grid-row:style(display:contents !important;)
+youtube.com##ytd-rich-grid-renderer, html:style(--ytd-rich-grid-items-per-row: 5 !important;)
+
+! Stop youtube from generating playlists and autoplaying them
+||youtube.com$removeparam=start_radio
+||youtube.com/*&list=RD*$removeparam=list
